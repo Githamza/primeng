@@ -1,0 +1,7 @@
+<p-sidebar [(visible)]="visibleSidebar1" (onHide)=changestatut() (blockScroll)="true" [baseZIndex]="10000" styleClass="ui-sidebar-sm">
+  <h1 style="font-weight:normal">Left Sidebar</h1>
+  <button pButton type="button" (click)=" changestatut()" label="Save" class="ui-button-success"></button>
+  <button pButton type="button" (click)="changestatut()" label="Cancel" class="ui-button-secondary"></button>
+</p-sidebar>
+<p>sidebar1 {{visibleSidebar1}}</p>
+<p>sidebarbtn {{visibleSidebarbtn}}</p>
